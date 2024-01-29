@@ -1,4 +1,4 @@
-=== Responsive Owl Carousel for Elementor ===
+=== Responsive Elementor Responsive Owl Carousel ===
 Contributors: thenahidul
 Tags: owl carousel, carousel, carousel slider, image carousel, testimonial slider, team slider, testimonial carousel, owl carousel elementor, elementor carousel,
 Requires at least: 6.0
@@ -41,7 +41,7 @@ Installation is fairly straightforward. Install it from WordPress Plugin Reposit
 ### From within the dashboard (recommended)
 
 1. Navigate to _Dashboard – Plugins – Add New_;
-2. Search for _Responsive Owl Carousel for Elementor_;
+2. Search for _Responsive Elementor Responsive Owl Carousel_;
 3. Click _Install_, then _Activate_.
 
 ### Manual installation

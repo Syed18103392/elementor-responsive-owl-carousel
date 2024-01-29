@@ -12,6 +12,18 @@
 	text-align: center;
 }
 
+.owl-item.active {
+	transition: transform 0.5s linear !important;
+}
+
+.owl-item.active.center {
+	transform: scale(1.1);
+}
+
+.bottom-area {
+	padding: 15px 20px 0px 20px;
+}
+
 .js-elementor-not-clickable {
 	pointer-events: none;
 }

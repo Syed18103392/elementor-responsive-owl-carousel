@@ -11,7 +11,7 @@ use Elementor\Controls_Manager;
 use Elementor\Group_Control_Image_Size;
 
 /**
- * Owl Carousel for Elementor widget
+ * Elementor Responsive Owl Carousel widget
  *
  * Elementor widget that inserts an embeddable content into the page, from any given URL.
  *
@@ -241,7 +241,7 @@ class Owl_Carousel extends \Elementor\Widget_Base {
 
 		// Adding link option 
 		$repeater->add_control(
-			'item_link',
+			$field_prefix . 'item_link',
 			[
 				'label' => esc_html__( 'Item Link', 'elementor' ),
 				'type' => Controls_Manager::URL,

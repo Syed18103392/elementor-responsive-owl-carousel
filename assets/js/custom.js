@@ -1,13 +1,13 @@
-;( function ( $ ) {
+; (function ($) {
 	/**
 	 * @param $scope The Widget wrapper element as a jQuery element
 	 * @param $ The jQuery alias
 	 */
 	const WidgetOwlCarouselHandler = function ($scope, $) {
-		const $carouselContainer = $scope.find( '.js-owce-carousel-container' );
-		const $carousel = $carouselContainer.find( '.js-owce-carousel' );
+		const $carouselContainer = $scope.find('.js-owce-carousel-container');
+		const $carousel = $carouselContainer.find('.js-owce-carousel');
 
-		if ( ! $carousel.length ) {
+		if (!$carousel.length) {
 			return;
 		}
 
@@ -42,9 +42,10 @@
 			nav,
 			dots,
 			loop,
-		} = $carousel.data( 'options' ) || {};
+		} = $carousel.data('options') || {};
 
 		$carousel.owlCarousel({
+			center: true,
 			rtl: rtl === 'yes',
 			margin: margin,
 			lazyLoad: lazyLoad,
@@ -70,7 +71,7 @@
 				0: {
 					items: items_count_mobile || 1,
 					slideBy: items_slideby_mobile || items_slideby,
-					margin: gf_owl_carousel_value_exists( margin_mobile, margin ),
+					margin: gf_owl_carousel_value_exists(margin_mobile, margin),
 					nav: nav_mobile,
 					dots: dots_mobile === null || dots_mobile === 'yes', // elementor return null sometimes for default value - a bug might be
 					loop: loop_mobile,
@@ -78,7 +79,7 @@
 				768: {
 					items: items_count_tablet || 2,
 					slideBy: items_slideby_tablet || items_slideby,
-					margin: gf_owl_carousel_value_exists( margin_tablet, margin ),
+					margin: gf_owl_carousel_value_exists(margin_tablet, margin),
 					nav: nav_tablet,
 					dots: dots_tablet === null || dots_tablet === 'yes',
 					loop: loop_tablet
@@ -94,21 +95,21 @@
 			}
 		});
 
-		if ( $( '.js-elementor-not-clickable' ).length) {
-			$( '.js-elementor-not-clickable' ).parent( '.owl-thumb' ).addClass( 'js-elementor-not-clickable' );
+		if ($('.js-elementor-not-clickable').length) {
+			$('.js-elementor-not-clickable').parent('.owl-thumb').addClass('js-elementor-not-clickable');
 		}
 	};
 
 	// Make sure you run this code under Elementor.
-	$( window ).on( 'elementor/frontend/init', function () {
+	$(window).on('elementor/frontend/init', function () {
 		elementorFrontend.hooks.addAction(
 			'frontend/element_ready/owl-carousel-elementor.default',
 			WidgetOwlCarouselHandler
 		);
-	} );
+	});
 
 	// helpers
-	function gf_owl_carousel_value_exists( val, defaultVal = '' ) {
+	function gf_owl_carousel_value_exists(val, defaultVal = '') {
 		return val !== undefined && val !== null ? val : defaultVal;
 	}
-} )( jQuery );
+})(jQuery);

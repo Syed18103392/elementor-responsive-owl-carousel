@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Responsive Owl Carousel for Elementor
+ * Plugin Name: Elementor Responsive Owl Carousel
  * Description: A highly customizable & responsive carousel plugin for Elementor page builder based on Owl Carousel
  * Plugin URI: https://github.com/thenahidul/gf-owl-carousel-elementor
  *

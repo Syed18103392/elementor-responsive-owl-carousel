@@ -135,7 +135,7 @@ final class Plugin {
 		$message = sprintf(
 		/* translators: 1: Plugin name 2: Elementor */
 			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'gf-owl-carousel-elementor' ),
-			'<strong>' . esc_html__( 'Owl Carousel for Elementor', 'gf-owl-carousel-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor Responsive Owl Carousel', 'gf-owl-carousel-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'gf-owl-carousel-elementor' ) . '</strong>'
 		);
 
@@ -158,7 +158,7 @@ final class Plugin {
 		$message = sprintf(
 		/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
 			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'gf-owl-carousel-elementor' ),
-			'<strong>' . esc_html__( 'Owl Carousel for Elementor', 'gf-owl-carousel-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor Responsive Owl Carousel', 'gf-owl-carousel-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'gf-owl-carousel-elementor' ) . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
@@ -182,7 +182,7 @@ final class Plugin {
 		$message = sprintf(
 		/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
 			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'gf-owl-carousel-elementor' ),
-			'<strong>' . esc_html__( 'Owl Carousel for Elementor', 'gf-owl-carousel-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor Responsive Owl Carousel', 'gf-owl-carousel-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'PHP', 'gf-owl-carousel-elementor' ) . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);
